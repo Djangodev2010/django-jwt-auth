@@ -73,11 +73,9 @@ TEMPLATES = [
 ]
 
 REST_FRAMEWORK = {
-    'Authenticaion': [
+    'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-        'rest_framework.authentication.BasicAuthetication',
-        'rest_framework.authentication.TokenAuthentication',
-    ]
+    ),
 }
 
 WSGI_APPLICATION = 'jwt.wsgi.application'
