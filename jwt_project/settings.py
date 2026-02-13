@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'jwt.urls'
+ROOT_URLCONF = 'jwt_project.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ REST_FRAMEWORK = {
     ),
 }
 
-WSGI_APPLICATION = 'jwt.wsgi.application'
+WSGI_APPLICATION = 'jwt_project.wsgi.application'
 
 
 # Database
